@@ -58,7 +58,3 @@ def bruh2(x: Monomial, y: Monomial) -> Monomial:
     if (x.is_positive == False and y.is_positive == True) or (x.is_positive == True and y.is_positive == False):
         result.is_positive = False
     return result
-
-test1 = Monomial(a = 0.5, k = [2,1,6], is_positive = False)
-test2 = Monomial(a = -100, k = [2,1,6], is_positive = True)
-print(bruh2(test1,test2).is_positive)
